@@ -1,0 +1,52 @@
+---
+title: "DistribuciOn Norma Ejercicios"
+author: "Rubén Pizarro Gurrola"
+format: revealjs
+editor: visual
+---
+
+# Objetivo
+
+Visualiaar y calcular probabilidades de acuerdo a la distribución normal.
+
+# Descripción
+
+Se cargan las librerías necesarias
+
+Se carga la función que calcula y visualiza distribución normal conforme a los argumentos recibidos y parámetros enviados que se relacionan con de ejercicios de probabilidad
+
+Se inicializan valores de la media, la desviación estándar, el valor del intervalos entre $x1$ y $x2$ y el tipo de gráfica de gauss con la representación de los valores de la función de densidad; si es cola a la izquierda, cola a la derecha o intervalo.
+
+# Fórmula de densidad
+
+$$
+ f(x)=\frac{1}{\sqrt{2\cdot\pi\cdot\sigma}}\cdot e^{(-\frac{(x-\mu)^2}{2 \cdot \sigma^2})}
+$$
+
+$$
+\therefore
+$$
+
+$$
+\pi = 3.14159;   e = 2.71828
+$$
+
+# Cargar librerías
+
+```{r echo=TRUE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(mosaic)
+library(readr)
+library(ggplot2)  # Para gráficos
+library(knitr)    # Para formateo de datos
+library(cowplot) #Imágenes en el mismo renglón
+options(scipen=999) # Notación normal
+```
+
+# Cargar funciones para distribución
+
+Se cargan funciones previamente codificadas y preparadas especialmente para distribuciones. Aquí la función a utilizar es *f.normal.all()*.
+
+```{r echo =TRUE,  message=FALSE, warning=FALSE}
+source("https://raw.githubusercontent.com/rpizarrog/probabilidad-y-estad-stica/master/Agosto-Diciembre%202022/funciones/funciones%20para%20distribuciones.R")
+```
